@@ -1,0 +1,114 @@
+html,body{
+  height:100%; 
+}     
+#cbar{ 
+  width:18px;
+  background:red;
+  height:18px;
+  float:left; 
+  margin-left:-3px;
+  margin-top:1px;
+  border:solid 2px black; 
+  border-radius:10px;
+}
+#strict{
+  width:100%;
+  outline:none;
+  border:solid 10px #212121;
+  border-radius:200px;
+  background:#FF5722;
+  font-size:15px;
+  margin-left:-25px;
+}
+#reset{
+  width:100%;
+  outline:none;
+  border:solid 10px #212121;
+  border-radius:200px;
+  background:#AB47BC;
+  font-size:15px;
+} 
+#scoreText{
+  position:absolute;
+  top:120px; 
+  left:7px;
+  z-index:101; 
+  border:solid 3px;
+  padding:3px;
+  padding-left:20px;
+  width:133px; 
+/*   color:white; */
+  font-size:18px;
+  font-weight:bold;
+}
+#header{
+  position:absolute;
+  z-index:100; 
+  width:100%; 
+  background:#212121;
+  color:#EEEEEE; 
+}  
+#body,#simon{
+  height:100%;
+}
+#msg{
+  position:absolute;
+  z-index:300; 
+  text-align:center;
+  font-size:14vw;
+  opacity:0.6;    
+  width:100%;
+  top:50%;
+  transform:translateY(-50%); 
+}
+#b1{
+  background:#2ecc71;
+  height:100%;
+}
+#b2{
+  background:#e74c3c;
+  height:100%;
+}
+#b3{
+  background:#f1c40f;
+  height:100%;
+}
+#b4{
+  background:#3498db;
+  height:100%;
+}
+
+#b1:hover,#b2:hover,#b3:hover,#b4:hover{
+  opacity:0.7; 
+}
+
+.noselect {
+  cursor:context-menu;
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+
+} 
+@media screen and (max-width: 280px){
+  #scoreText{ 
+    top:157px;  
+  }
+  div > #reset{ 
+    margin-top:40px;
+    margin-left:-56vw; 
+    width:95vw; 
+  }  
+  div > #strict{ 
+    margin-left:-6vw; 
+    width:95vw;
+  }
+}
+@media screen and (max-width: 240px){
+  #scoreText{ 
+    top:200px;  
+  }  
+}
